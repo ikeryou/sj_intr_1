@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>テーマ2 "クール、スタイリッシュ、スピード感" | インタラ塾 vol.1</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body, html {
+        width: 100%;
+        height: 100%;
+      }
+   
+      .fv {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .fv-bg-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .fv-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .fv-contents {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #FFF;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-left: 3vw;
+        padding-bottom: 10vw;
+      }
+
+      .fv-contents-title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 4vw;
+        margin-bottom: 0.2em;
+      }
+
+      .fv-contents-title > .bg, .fv-contents-text > .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        transform-origin: 0% 50%;
+      }
+
+      .fv-contents-text {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-weight: 200;
+        font-size: 1vw;
+        line-height: 1.25;
+      }
+      
+    </style>
+
+  </head>
+  <body>
+    <section class="fv">
+      <div class="fv-bg-wrapper">
+        <img class="fv-bg" src="./bg.webp" alt="">
+      </div>
+      <div class="fv-contents">
+        <h1 class="fv-contents-title"><span class="bg"></span>Awesome cool website</h1>
+        <p class="fv-contents-text"><span class="bg"></span>This site is very upscale. It is also elegant and serene. <br>Just looking at it makes me feel very rich. Please take a look.</p>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="../libs/utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

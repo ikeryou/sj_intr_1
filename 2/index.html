@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>テーマ3 "ポップ、かわいい、アクティブ" | インタラ塾 vol.1</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body, html {
+        width: 100%;
+        height: 100%;
+      }
+   
+      .fv {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .fv-bg-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .fv-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.85);
+      }
+
+      .fv-contents {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .fv-contents-title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 4.5vw;
+        margin-bottom: 0.2em;
+        text-align: center;
+        perspective: 10vw;
+      }
+
+      .fv-contents-title span {
+        display: inline-block;
+      }
+
+      .fv-contents-text {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-weight: 300;
+        font-size: 1.5vw;
+        line-height: 1.25;
+        text-align: center;
+      }
+      
+    </style>
+
+  </head>
+  <body>
+    <section class="fv">
+      <div class="fv-bg-wrapper">
+        <img class="fv-bg" src="./bg.webp" alt="">
+      </div>
+      <div class="fv-contents">
+        <h1 class="fv-contents-title">very pop and cute website</h1>
+        <p class="fv-contents-text">This site is very upscale. It is also elegant and serene. <br>Just looking at it makes me feel very rich. Please take a look.</p>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="../libs/utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
